@@ -21,6 +21,7 @@ public class Curso {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
     private Long id;
+    private String nombre;
 
     @ManyToMany(mappedBy = "cursos")
     private List<Estudiante> estudiantes;
